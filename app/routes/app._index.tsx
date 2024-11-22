@@ -14,7 +14,7 @@ import {
   Link,
   InlineStack,
 } from "@shopify/polaris";
-import { TitleBar, useAppBridge } from "@shopify/app-bridge-react";
+import { useAppBridge } from "@shopify/app-bridge-react";
 import { authenticate } from "../shopify.server";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
@@ -112,24 +112,20 @@ export default function Index() {
   const generateProduct = () => fetcher.submit({}, { method: "POST" });
 
   return (
-    <Page>
-      <TitleBar title="Whatsapp">
-        <Text variant="bodyMd" as="p">
-          Automatically notify your customers via WhatsApp: abandoned cart,
-          created order, paid order, shipped order, and more.
-        </Text>
-      </TitleBar>
-      <Card>
-        <BlockStack gap="200">
-          <Text as="h1" variant="headingLg" fontWeight="bold">
-            Whatsapp
-          </Text>
-          <Text variant="bodyMd" as="p">
-            Automatically notify your customers via WhatsApp: abandoned cart,
-            created order, paid order, shipped order, and more.
-          </Text>
-        </BlockStack>
-      </Card>
+    <Page fullWidth>
+      <div className="-mt-5">
+        <Card>
+          <BlockStack gap="200">
+            <Text as="h1" variant="headingLg" fontWeight="bold">
+              Whatsapp
+            </Text>
+            <Text variant="bodyMd" as="p">
+              Automatically notify your customers via WhatsApp: abandoned cart,
+              created order, paid order, shipped order, and more.
+            </Text>
+          </BlockStack>
+        </Card>
+      </div>
       <BlockStack gap="500">
         <Layout>
           <Layout.Section>

@@ -7,6 +7,8 @@ import { NavMenu } from "@shopify/app-bridge-react";
 import polarisStyles from "@shopify/polaris/build/esm/styles.css?url";
 
 import { authenticate } from "../shopify.server";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import { AppSidebar } from "@/components/app-sidebar";
 
 export const links = () => [{ rel: "stylesheet", href: polarisStyles }];
 
@@ -27,7 +29,11 @@ export default function App() {
         </Link>
         <Link to="/app/additional">Additional page</Link>
       </NavMenu>
-      <Outlet />
+      <SidebarProvider>
+        <AppSidebar />
+        <SidebarTrigger />
+        <Outlet />
+      </SidebarProvider>
     </AppProvider>
   );
 }

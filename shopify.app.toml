@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "452c0f42cf636de5607c5851790be021"
-application_url = "https://webshots-abandoned-lover-earliest.trycloudflare.com"
+application_url = "https://hierarchy-qualified-innovative-analysis.trycloudflare.com"
 embedded = true
 name = "test-app"
 handle = "test-app-10904"
@@ -19,9 +19,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://webshots-abandoned-lover-earliest.trycloudflare.com/auth/callback",
-  "https://webshots-abandoned-lover-earliest.trycloudflare.com/auth/shopify/callback",
-  "https://webshots-abandoned-lover-earliest.trycloudflare.com/api/auth/callback"
+  "https://hierarchy-qualified-innovative-analysis.trycloudflare.com/auth/callback",
+  "https://hierarchy-qualified-innovative-analysis.trycloudflare.com/auth/shopify/callback",
+  "https://hierarchy-qualified-innovative-analysis.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
